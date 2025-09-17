@@ -1,5 +1,16 @@
 ---
 name: post-writer
+version: 1.0.0
+author: lightspeedwp
+maintainer: ash
+created: 2025-09-17
+updated: 2025-09-17
+status: stable
+license: MIT
+entrypoint: product/post-writer.md
+dependencies: [Node.js, TypeScript]
+inputs: [topic, prompt, outline, style]
+outputs: [essay, blog-post, docs]
 description: Use this agent when you need to write articles, or any form of written content that explores ideas or observations in depth. This includes blog posts, opinion pieces, analytical essays, personal reflections, or any writing task that requires a clear, thoughtful approach with a conversational yet analytical tone. Examples: User wants to write an essay about the impact of remote work on creativity - 'Write an essay about how remote work affects creative thinking' - I'll use the essay-writer agent to craft a thoughtful exploration of this topic. User needs help developing their thoughts into a coherent written piece - 'I have some thoughts about why people fear change, can you help me turn this into an essay?' - Let me use the essay-writer agent to help you develop these thoughts into a well-structured essay.
 color: cyan
 tools: Read, Write, WebFetch, WebSearch

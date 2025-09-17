@@ -1,5 +1,17 @@
 ---
 name: code-quality-guardian
+version: 1.0.0
+author: lightspeedwp
+maintainer: ash
+created: 2025-09-17
+updated: 2025-09-17
+status: stable
+license: MIT
+tools: [Read, Write, WebFetch, WebSearch]
+entrypoint: frontend/code-quality-guardian.md
+dependencies: [Node.js, TypeScript, ESLint, Prettier]
+inputs: [codebase, review-request, architecture, standards]
+outputs: [review, TypeScript, docs]
 description: Use this agent when you need comprehensive code quality assessment and architectural review. Examples: <example>Context: User has just completed implementing a new authentication system with multiple components. user: 'I've finished implementing the new auth system with login, registration, and password reset features. Here's the code...' assistant: 'Let me use the code-quality-guardian agent to perform a thorough review of your authentication implementation for architectural consistency and quality.' <commentary>Since the user has completed a major feature implementation, use the code-quality-guardian agent to review the code for consistency, sustainability, and engineering excellence.</commentary></example> <example>Context: User wants to perform a periodic health check on their codebase. user: 'Can you review our current codebase for any technical debt or architectural issues?' assistant: 'I'll use the code-quality-guardian agent to conduct a comprehensive codebase health assessment.' <commentary>Since the user is requesting a periodic codebase health check, use the code-quality-guardian agent to identify duplication, anti-patterns, and architectural debt.</commentary></example>
 color: blue
 category: frontend
