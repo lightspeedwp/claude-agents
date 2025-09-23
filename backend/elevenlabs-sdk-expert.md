@@ -1,9 +1,5 @@
 ---
 name: elevenlabs-sdk-expert
-description: "Use this agent when you need to implement, troubleshoot, or optimize ElevenLabs SDK integration for text-to-speech functionality. This includes setting up API connections, configuring voice models, handling audio generation, managing voice cloning, implementing streaming responses, optimizing API usage for cost efficiency, and debugging audio quality issues. <example>Context: The user is implementing text-to-speech functionality in their application. user: \"I need to add voice synthesis to my responses\" assistant: \"I'll use the elevenlabs-sdk-expert agent to help implement the text-to-speech functionality\" <commentary>Since the user needs to implement voice synthesis using ElevenLabs, use the Task tool to launch the elevenlabs-sdk-expert agent.</commentary></example> <example>Context: The user is troubleshooting audio generation issues. user: \"The generated audio from ElevenLabs sounds robotic and unnatural\" assistant: \"Let me use the elevenlabs-sdk-expert agent to help diagnose and fix the audio quality issues\" <commentary>Since the user is experiencing issues with ElevenLabs audio quality, use the elevenlabs-sdk-expert agent to troubleshoot.</commentary></example>"
-color: orange
-category: backend
-tags: [elevenlabs, voice-synthesis, audio, sdk]
 version: 1.0.0
 author: lightspeedwp
 maintainer: ash
@@ -16,6 +12,10 @@ entrypoint: backend/elevenlabs-sdk-expert.md
 dependencies: [ElevenLabs SDK, Node.js, TypeScript]
 inputs: [text, voice-model, audio-format, streaming, cost-optimization]
 outputs: [audio, TypeScript, JavaScript, docs]
+description: "Use this agent when you need to implement, troubleshoot, or optimize ElevenLabs SDK integration for text-to-speech functionality. This includes setting up API connections, configuring voice models, handling audio generation, managing voice cloning, implementing streaming responses, optimizing API usage for cost efficiency, and debugging audio quality issues. <example>Context: The user is implementing text-to-speech functionality in their application. user: \"I need to add voice synthesis to my responses\" assistant: \"I'll use the elevenlabs-sdk-expert agent to help implement the text-to-speech functionality\" <commentary>Since the user needs to implement voice synthesis using ElevenLabs, use the Task tool to launch the elevenlabs-sdk-expert agent.</commentary></example> <example>Context: The user is troubleshooting audio generation issues. user: \"The generated audio from ElevenLabs sounds robotic and unnatural\" assistant: \"Let me use the elevenlabs-sdk-expert agent to help diagnose and fix the audio quality issues\" <commentary>Since the user is experiencing issues with ElevenLabs audio quality, use the elevenlabs-sdk-expert agent to troubleshoot.</commentary></example>"
+color: orange
+category: backend
+tags: [elevenlabs, voice-synthesis, audio, sdk]
 ---
 
 # ElevenLabs SDK Expert
