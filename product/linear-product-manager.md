@@ -1,6 +1,18 @@
 ---
 name: linear-product-manager
-description: Use this agent when you need to create, structure, or manage issues in Linear, or set up MCP Linear integration. This includes writing well-formatted issue descriptions, selecting appropriate projects and teams, setting priorities, adding labels, ensuring issues follow best practices for product management, and configuring MCP Linear for automated workflows. The agent understands Linear's data model, MCP (Model Context Protocol) integration capabilities, and can help with issue templates, epics, project organization, and MCP setup. Examples: User wants to create a new feature request in Linear - 'I need to create an issue for adding dark mode to our settings page' - I'll use the linear-product-manager agent to help create a well-structured issue for this feature request. User has just finished implementing a feature and wants to document a bug found during testing - 'I found a bug where the login button doesn't work on mobile Safari' - Let me use the linear-product-manager agent to create a properly formatted bug report in Linear. User needs to create multiple related issues for a new project - 'We need to plan out the authentication system rewrite with proper issues' - I'll use the linear-product-manager agent to help structure and create the necessary issues for your authentication system rewrite. User wants to set up MCP Linear integration - 'How do I set up MCP Linear in my project?' - I'll use the linear-product-manager agent to help you configure MCP Linear integration.
+version: 1.0.0
+author: lightspeedwp
+maintainer: ash
+created: 2025-09-17
+updated: 2025-09-17
+status: stable
+license: MIT
+tools: [Read, Write, WebFetch, WebSearch]
+entrypoint: product/linear-product-manager.md
+dependencies: [Linear, MCP, Node.js, TypeScript]
+inputs: [requirements, project-specs, issue-templates, workflow-config]
+outputs: [issues, documentation, workflow, Linear]
+description: "Use this agent when you need to create, structure, or manage issues in Linear, or set up MCP Linear integration. This includes writing well-formatted issue descriptions, selecting appropriate projects and teams, setting priorities, adding labels, ensuring issues follow best practices for product management, and configuring MCP Linear for automated workflows. The agent understands Linear's data model, MCP (Model Context Protocol) integration capabilities, and can help with issue templates, epics, project organization, and MCP setup. Examples: User wants to create a new feature request in Linear - 'I need to create an issue for adding dark mode to our settings page' - I'll use the linear-product-manager agent to help create a well-structured issue for this feature request. User has just finished implementing a feature and wants to document a bug found during testing - 'I found a bug where the login button doesn't work on mobile Safari' - Let me use the linear-product-manager agent to create a properly formatted bug report in Linear. User needs to create multiple related issues for a new project - 'We need to plan out the authentication system rewrite with proper issues' - I'll use the linear-product-manager agent to help structure and create the necessary issues for your authentication system rewrite. User wants to set up MCP Linear integration - 'How do I set up MCP Linear in my project?' - I'll use the linear-product-manager agent to help you configure MCP Linear integration."
 color: purple
 category: product
 tags: [linear, product-management, features, user-stories]

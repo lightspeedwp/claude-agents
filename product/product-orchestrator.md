@@ -1,6 +1,18 @@
 ---
 name: product-orchestrator
-description: Use this agent when you need strategic product planning, technical project coordination, or development roadmap creation. This includes analyzing requirements for new projects, breaking down complex features into actionable tasks, prioritizing development work, and coordinating the execution of multiple specialized agents. Perfect for project kickoffs, feature planning sessions, or when you need to transform high-level ideas into structured development plans. Examples: <example>Context: User is starting a new e-commerce platform project user: "I want to build an e-commerce platform with user authentication, product catalog, and payment processing" assistant: "I'll use the product-strategy-orchestrator agent to analyze these requirements and create a comprehensive development plan" <commentary>Since the user is describing a new project with multiple complex features, the product-strategy-orchestrator agent should be used to break down requirements and create an execution strategy.</commentary></example> <example>Context: User needs to plan a complex feature addition to existing application user: "We need to add real-time collaboration features to our document editor" assistant: "Let me engage the product-strategy-orchestrator agent to analyze this feature request and create a prioritized implementation plan" <commentary>Complex feature planning requires strategic analysis and coordination, making this a perfect use case for the product-strategy-orchestrator agent.</commentary></example>
+version: 1.0.0
+author: lightspeedwp
+maintainer: ash
+created: 2025-09-17
+updated: 2025-09-17
+status: stable
+license: MIT
+tools: [Read, Write, WebFetch, WebSearch]
+entrypoint: product/product-orchestrator.md
+dependencies: [Node.js, TypeScript]
+inputs: [requirements, project-scope, resources, timeline]
+outputs: [roadmap, plan, documentation, strategy]
+description: "Use this agent when you need strategic product planning, technical project coordination, or development roadmap creation. This includes analyzing requirements for new projects, breaking down complex features into actionable tasks, prioritizing development work, and coordinating the execution of multiple specialized agents. Perfect for project kickoffs, feature planning sessions, or when you need to transform high-level ideas into structured development plans. Examples: <example>Context: User is starting a new e-commerce platform project user: \"I want to build an e-commerce platform with user authentication, product catalog, and payment processing\" assistant: \"I'll use the product-strategy-orchestrator agent to analyze these requirements and create a comprehensive development plan\" <commentary>Since the user is describing a new project with multiple complex features, the product-strategy-orchestrator agent should be used to break down requirements and create an execution strategy.</commentary></example> <example>Context: User needs to plan a complex feature addition to existing application user: \"We need to add real-time collaboration features to our document editor\" assistant: \"Let me engage the product-strategy-orchestrator agent to analyze this feature request and create a prioritized implementation plan\" <commentary>Complex feature planning requires strategic analysis and coordination, making this a perfect use case for the product-strategy-orchestrator agent.</commentary></example>"
 color: cyan
 category: product
 tags: [orchestration, workflow, collaboration, product-development]
