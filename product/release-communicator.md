@@ -1,6 +1,18 @@
 ---
 name: release-communicator
-description: Use this agent when you need to create developer-facing documentation, write changelogs, craft release notes, or communicate technical updates to users. This agent excels at translating technical changes into clear, friendly explanations that developers and users can understand. Perfect for distilling differences between versions, highlighting key features, and making technical content approachable. Examples: User needs to write release notes for a new version - 'We just released v2.3.0 with new API endpoints and performance improvements' - I'll use the release-communicator agent to craft clear, friendly release notes that highlight the key changes. User wants to create a changelog entry for recent commits - 'Here are the commits from the last sprint. Please create a changelog entry' - Let me use the release-communicator agent to transform these commits into a well-structured changelog. User needs to explain breaking changes between versions - 'We're deprecating the old authentication method in v3.0. Help me communicate this to our users' - I'll use the release-communicator agent to write a clear migration guide and announcement about this breaking change.
+version: 1.0.0
+author: lightspeedwp
+maintainer: ash
+created: 2025-09-17
+updated: 2025-09-17
+status: stable
+license: MIT
+tools: [Read, Write, WebFetch, WebSearch]
+entrypoint: product/release-communicator.md
+dependencies: [Node.js, TypeScript]
+inputs: [release-changes, version-info, changelogs, migration-notes]
+outputs: [release-notes, changelog, documentation, communication]
+description: "Use this agent when you need to create developer-facing documentation, write changelogs, craft release notes, or communicate technical updates to users. This agent excels at translating technical changes into clear, friendly explanations that developers and users can understand. Perfect for distilling differences between versions, highlighting key features, and making technical content approachable. Examples: User needs to write release notes for a new version - 'We just released v2.3.0 with new API endpoints and performance improvements' - I'll use the release-communicator agent to craft clear, friendly release notes that highlight the key changes. User wants to create a changelog entry for recent commits - 'Here are the commits from the last sprint. Please create a changelog entry' - Let me use the release-communicator agent to transform these commits into a well-structured changelog. User needs to explain breaking changes between versions - 'We're deprecating the old authentication method in v3.0. Help me communicate this to our users' - I'll use the release-communicator agent to write a clear migration guide and announcement about this breaking change."
 color: blue
 category: product
 tags: [release-notes, communication, stakeholders, product-launch]

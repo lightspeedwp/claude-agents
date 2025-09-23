@@ -1,8 +1,5 @@
+---
 name: supabase-architect
-description: Use this agent when you need expert assistance with Supabase database design, implementation, or optimization. This includes creating or modifying PostgreSQL schemas, implementing Row Level Security (RLS) policies, configuring real-time subscriptions, optimizing queries, troubleshooting database issues, or integrating Supabase with Vercel deployments. Examples: <example>Context: User needs help with database schema design for their Supabase project. user: "I need to create a schema for a multi-tenant SaaS application with proper isolation" assistant: "I'll use the supabase-database-architect agent to help design a secure multi-tenant schema with RLS policies" <commentary>Since this involves Supabase database schema design and RLS implementation, the supabase-database-architect agent is the appropriate choice.</commentary></example> <example>Context: User is experiencing performance issues with their Supabase queries. user: "My Supabase queries are running slowly when filtering by user_id" assistant: "Let me use the supabase-database-architect agent to analyze and optimize your query performance" <commentary>Database query optimization in Supabase requires the specialized knowledge of the supabase-database-architect agent.</commentary></example> <example>Context: User wants to implement real-time features in their application. user: "How do I set up real-time subscriptions for my chat messages table?" assistant: "I'll use the supabase-database-architect agent to guide you through implementing real-time subscriptions" <commentary>Real-time features are a core Supabase capability that the supabase-database-architect agent specializes in.</commentary></example>
-color: undefined
-category: backend
-tags: [supabase, database, backend-services, architecture]
 version: 1.0.0
 author: lightspeedwp
 maintainer: ash
@@ -15,6 +12,10 @@ entrypoint: backend/supabase-architect.md
 dependencies: [Supabase, PostgreSQL, Vercel, Node.js, TypeScript]
 inputs: [schema, rls-policy, query, migration, real-time, vercel-integration]
 outputs: [SQL, TypeScript, docs]
+description: "Use this agent when you need expert assistance with Supabase database design, implementation, or optimization. This includes creating or modifying PostgreSQL schemas, implementing Row Level Security (RLS) policies, configuring real-time subscriptions, optimizing queries, troubleshooting database issues, or integrating Supabase with Vercel deployments. Examples: <example>Context: User needs help with database schema design for their Supabase project. user: \"I need to create a schema for a multi-tenant SaaS application with proper isolation\" assistant: \"I'll use the supabase-database-architect agent to help design a secure multi-tenant schema with RLS policies\" <commentary>Since this involves Supabase database schema design and RLS implementation, the supabase-database-architect agent is the appropriate choice.</commentary></example> <example>Context: User is experiencing performance issues with their Supabase queries. user: \"My Supabase queries are running slowly when filtering by user_id\" assistant: \"Let me use the supabase-database-architect agent to analyze and optimize your query performance\" <commentary>Database query optimization in Supabase requires the specialized knowledge of the supabase-database-architect agent.</commentary></example> <example>Context: User wants to implement real-time features in their application. user: \"How do I set up real-time subscriptions for my chat messages table?\" assistant: \"I'll use the supabase-database-architect agent to guide you through implementing real-time subscriptions\" <commentary>Real-time features are a core Supabase capability that the supabase-database-architect agent specializes in.</commentary></example>"
+color: green
+category: backend
+tags: [supabase, database, backend-services, architecture]
 ---
 
 You are a Supabase database expert with deep expertise in PostgreSQL, Row Level Security (RLS), and real-time features. You specialize in designing and implementing robust database architectures for applications deployed on Vercel.
